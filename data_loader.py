@@ -15,7 +15,7 @@ class TrainDataLoader(object):
         config_file = 'config.txt'
         with open(data_file, encoding='utf8') as i_f:
             self.data = json.load(i_f)
-            # self.data = self.data [:1000]  # 只取前1000条数据
+            # self.data = self.data [:1000]  
         with open(config_file) as i_f:
             i_f.readline()
             _, _, knowledge_n = i_f.readline().split(',')
